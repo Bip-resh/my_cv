@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipresh's Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile-area">
+                <div class="photo-frame">
+                    <img src="image_pro.png" alt="Bipresh Talukder">
+                </div>
+                <h2 class="profile-name">Bipresh Talukder</h2>
+                <span class="profile-title">Software Engineer</span>
+            </div>
+
+            <div class="info-section">
+                <h3 class="section-heading">Contact</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="phone" aria-hidden="true"></i></span>
+                        <span class="detail">+88 0 1757423790</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="gmail" aria-hidden="true"></i></span>
+                        <span class="detail">tbipresh27@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="github" aria-hidden="true"></i></span>
+                        <span class="detail">https://github.com/Bip-resh</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="facebook" aria-hidden="true"></i></span>
+                        <span class="detail">www.facebook.com/polash.talukder.984</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="detail">Shivgonj, Sylhet</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="education-section">
+                <h3 class="section-heading">Education</h3>
+                <ul>
+                    <li>
+                        <p class="period">2022 - Running</p>
+                        <p class="degree">B.Sc in Software Engineering</p>
+                        <p class="institution">Metropolitan University</p>  
+                    </li>
+                    <li>
+                        <p class="period">2018 - 2019</p>
+                        <p class="degree">Higher Secondary Certificate</p>
+                        <p class="institution">Shahporan Govt College, Sylhet</p>
+                    </li>
+                    <li>
+                        <p class="period">2016 - 2017</p>
+                        <p class="degree">Secondary School Certificate</p>
+                        <p class="institution">H.M.P High School, Sunamgonj</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="languages-section">
+                <h3 class="section-heading">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="language">Bengali</span>
+                        <span class="skill-bar">
+                            <div style="width: 100%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="language">English</span>
+                        <span class="skill-bar">
+                            <div style="width: 90%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="language">Hindi</span>
+                        <span class="skill-bar">
+                            <div style="width: 45%;"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-heading">Share Your CV</div>
+            <div class="button facebook" onclick="shareOnSocial('facebook')">
+                <div         class="icon"><i class="fa fa-facebook"></i></div>
+            </div>
+            <div class="button twitter" onclick="shareOnSocial('twitter')">
+                <div class="icon">
+                    <i class="fa fa-twitter"
+                    ></i>
+                </div>
+            </div>
+            <div class="button reddit" onclick="shareOnSocial('reddit')">
+                <div         class="icon"><i class="fa fa-reddit"></i>
+                </div>
+            </div>
+            <div class="button instagram" onclick="shareOnSocial('instagram')">
+                <div class="icon">
+                    <i class="fa fa-instagram"
+                    ></i>
+                </div>
+            </div>
+            <div class="button whatsapp" onclick="shareOnSocial('whatsapp')">
+                <div class="icon">
+                    <i class="fa fa-whatsapp">
+                    </i>
+                </div>
+            </div>
+            <script>
+                // Social Share Function
+                function shareOnSocial(platform) {
+                    const url = encodeURIComponent(window.location.href);  // URL of the CV
+                    const text = encodeURIComponent("Check out my resume!");  // Custom message
+            
+                    let shareUrl = "";
+                    
+                    // Define the sharing URL for each platform
+                    if (platform === "facebook") {
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    } else if (platform === "twitter") {
+                        shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+                    } else if (platform === "reddit") {
+                        shareUrl = `https://www.reddit.com/submit?url=${url}&title=${text}`;
+                    } else if (platform === "instagram") {
+                        alert("Instagram does not support web-based sharing directly. Use the Instagram app.");
+                        return;
+                    } else if (platform === "whatsapp") {
+                        shareUrl = `https://api.whatsapp.com/send?text=${text} ${url}`;
+                    }
+            
+                    // Open the sharing URL in a new window
+                    window.open(shareUrl, "_blank", "width=600,height=400");
+                }
+            </script>
+            
+           
+        </div>
+
+        <div class="main-content">
+            <div class="section bio">
+                <h2 class="section-title">Profile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque aut harum sed a placeat voluptatem quibusdam natus consequuntur consequatur ex, dolore sequi error? Eaque voluptatum illum cupiditate totam id ab molestias odio, corrupti similique odit quasi deserunt, voluptate, perferendis vero reprehenderit in dolores cum iste doloribus doloremque mollitia. Tempore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit architecto dolorem est magni quas corporis quaerat pariatur maxime quasi vero, ipsum distinctio quo deleniti illum animi, exercitationem id. Sit, magni.</p>
+            </div>
+
+            <div class="section experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="job">
+                    <div class="job-header">
+                        <p class="years">2023 - Present</p>
+                        <p class="company">Next Genius</p>
+                    </div>
+                    <div class="job-details">
+                        <h4>Junior Software Engineer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem modi pariatur, aperiam quod voluptatem ullam, atque, aliquid laboriosam voluptate tenetur commodi expedita voluptas odio! Saepe inventore quidem tempore explicabo!</p>
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="job-header">
+                        <p class="years">2019 - 2020</p>
+                        <p class="company">River Sign</p>
+                    </div>
+                    <div class="job-details">
+                        <h4>Data Entry Expert</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem modi pariatur, aperiam quod voluptatem ullam, atque, aliquid laboriosam voluptate tenetur commodi expedita voluptas odio! Saepe inventore quidem tempore explicabo!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section skills">
+                <h2 class="section-title">Professional Skills</h2>
+                <div class="skill">
+                    <span>C</span>
+                    <div class="skill-bar"><div style="width: 60%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>C++</span>
+                    <div class="skill-bar"><div style="width: 55%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div style="width: 40%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar"><div style="width: 45%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>Node JS</span>
+                    <div class="skill-bar"><div style="width: 10%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>React</span>
+                    <div class="skill-bar"><div style="width: 20%;"></div></div>
+                </div>
+            </div>
+
+            <div class="section interests">
+                <h2 class="section-title">Interests</h2>
+                <ul class="interests-list">
+                    <li><i class="book" aria-hidden="true"></i> Reading</li>
+                    <li><i class="Writing" aria-hidden="true"></i> Writing</li>
+                    <li><i class="Planning" aria-hidden="true"></i> Planning</li>
+                    <li><i class="code" aria-hidden="true"></i> Coding</li>
+                    <li><i class="sports" aria-hidden="true"></i> Watching Sports</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

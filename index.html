@@ -115,14 +115,12 @@
                 </div>
             </div>
             <script>
-                // Social Share Function
                 function shareOnSocial(platform) {
                     const url = encodeURIComponent(window.location.href);  // URL of the CV
                     const text = encodeURIComponent("Check out my resume!");  // Custom message
             
                     let shareUrl = "";
                     
-                    // Define the sharing URL for each platform
                     if (platform === "facebook") {
                         shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
                     } else if (platform === "twitter") {
@@ -135,8 +133,8 @@
                     } else if (platform === "whatsapp") {
                         shareUrl = `https://api.whatsapp.com/send?text=${text} ${url}`;
                     }
-            
-                    // Open the sharing URL in a new window
+
+                    
                     window.open(shareUrl, "_blank", "width=600,height=400");
                 }
             </script>
